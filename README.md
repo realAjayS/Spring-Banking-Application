@@ -1,9 +1,9 @@
-🏦 Simple Banking Application - Spring Boot
+**🏦 Simple Banking Application - Spring Boot**
 
 This is a simple Banking Application built using Spring Boot, Spring Data JPA, and H2 Database/MySQL (configurable).
 It demonstrates the basic CRUD operations for managing bank accounts, along with deposit and withdrawal functionalities.
 
-🚀 Features
+**🚀 Features**
 * Create a new bank account
 * Fetch account details by ID
 * Fetch all accounts
@@ -11,7 +11,7 @@ It demonstrates the basic CRUD operations for managing bank accounts, along with
 * Withdraw money from an account (with validation for insufficient balance)
 * Delete an account
 
-🛠️ Tech Stack
+**🛠️ Tech Stack**
 * Java 17+
 * Spring Boot 3+
 * Spring Data JPA
@@ -19,62 +19,24 @@ It demonstrates the basic CRUD operations for managing bank accounts, along with
 * H2 / MySQL Database
 * Lombok
 
-com.ajay.banking
+**⚙️ Setup & Run**
 
-│
-├── controller       # REST Controllers
-
-│   └── AccountController.java
-
-│
-├── dto             # Data Transfer Objects
-
-│   └── AccountDto.java
-
-│
-├── entity          # JPA Entities
-
-│   └── Account.java
-
-│
-├── mapper          # Mapper (Entity <-> DTO)
-
-│   └── AccountMapper.java
-
-│
-├── repository      # Spring Data JPA Repositories
-
-│   └── AccountRepository.java
-│
-├── service         # Service Layer (Interface + Implementation)
-
-│   ├── AccountService.java
-
-│   └── impl/AccountServiceImpl.java
-
-│
-└── BankingApplication.java   # Main Spring Boot Application
-
-
-⚙️ Setup & Run
-
-1️⃣ Clone the repository
+1️⃣ **Clone the repository**
 
 `git clone https://github.com/your-username/simple-banking-app.git
 cd simple-banking-app`
 
-2️⃣ Configure Database (application.properties)
-
-H2 (Default)
+2️⃣** Configure Database** (application.properties)
+**H2 (Default)**
 
 `spring.datasource.url=jdbc:h2:mem:bankdb
 spring.datasource.driverClassName=org.h2.Driver
-spring.datasource.username=sa
-spring.datasource.password=
+spring.datasource.username=root
+spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 spring.h2.console.enabled=true`
 
-MySQL (Optional)
+**MySQL (Optional)**
 
 `spring.datasource.url=jdbc:mysql://localhost:3306/banking_db
 spring.datasource.username=root
@@ -82,8 +44,7 @@ spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true`
 
-REST API Endpoints
-
+**REST API Endpoints**
 | Method | Endpoint                      | Description                  | Request Body (JSON)                                |
 | ------ | ----------------------------- | ---------------------------- | -------------------------------------------------- |
 | POST   | `/api/accounts`               | Create new account           | `{ "accountHolderName": "Ajay", "balance": 1000 }` |
@@ -93,8 +54,7 @@ REST API Endpoints
 | PUT    | `/api/accounts/{id}/withdraw` | Withdraw amount from account | `{ "amount": 200 }`                                |
 | DELETE | `/api/accounts/{id}`          | Delete account by ID         | -                                                  |
 
-✅ Future Enhancements
-
+**✅ Future Enhancements**
 1. Authentication & Authorization (Spring Security, JWT)
 2. Transaction history tracking
 3. Role-based access (Admin/User)
