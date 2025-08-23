@@ -1,4 +1,4 @@
-package com.ajay.banking_app;
+package com.ajay.banking;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

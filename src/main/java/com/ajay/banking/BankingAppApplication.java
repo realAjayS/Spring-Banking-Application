@@ -1,4 +1,4 @@
-package com.ajay.banking_app;
+package com.ajay.banking;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
