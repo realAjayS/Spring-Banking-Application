@@ -22,28 +22,29 @@ It demonstrates the basic CRUD operations for managing bank accounts, along with
 **⚙️ Setup & Run**
 
 1️⃣ **Clone the repository**
-
-`git clone https://github.com/your-username/simple-banking-app.git
-cd simple-banking-app`
+```
+git clone https://github.com/your-username/simple-banking-app.git
+cd simple-banking-app
+```
 
 2️⃣** Configure Database** (application.properties)
 **H2 (Default)**
-
-`spring.datasource.url=jdbc:h2:mem:bankdb
+```
+spring.datasource.url=jdbc:h2:mem:bankdb
 spring.datasource.driverClassName=org.h2.Driver
 spring.datasource.username=root
 spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
-spring.h2.console.enabled=true`
-
+spring.h2.console.enabled=true
+```
 **MySQL (Optional)**
-
-`spring.datasource.url=jdbc:mysql://localhost:3306/banking_db
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/banking_db
 spring.datasource.username=root
 spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true`
-
+spring.jpa.show-sql=true
+```
 **REST API Endpoints**
 | Method | Endpoint                      | Description                  | Request Body (JSON)                                |
 | ------ | ----------------------------- | ---------------------------- | -------------------------------------------------- |
